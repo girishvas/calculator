@@ -18,5 +18,6 @@ urlpatterns = [
 	path('simpleoperation/', SimpleOperation.as_view(), name='simpleoperation'),
 	# path('simpleoperation/',login_required(SimpleOperation.as_view(), login_url=reverse_lazy('authentication:login')), name="simpleoperation"),
 	path('report/', Report.as_view(), name='report'),
+	path('test/', SwaggerSchemaView.as_view(), name='test'),
 	path('download/', Download.as_view(), name='download'),
 ]
